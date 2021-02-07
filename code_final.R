@@ -1,4 +1,4 @@
-## ST326 Financial Statistics Project
+### ST326 Financial Statistics Project ###
 
 ### Q1 ####
 
@@ -266,7 +266,7 @@ get.sharpe <- function(x, y, win = 150 , t0=250 , q=0){
     beta <- beta.ols(predictors,target) # Get beta OLS solution of regressing Y(t) on X(t-1)
     
     if (q==1){
-      pred <- sum( c(1,x[i,],y[i]) * beta ) # This is Y(t+1) obtained by multiplying X(t) and â OLS 
+      pred <- sum( c(1,x[i,],y[i]) * beta ) # This is Y(t+1) obtained by multiplying X(t) and Ã¢ OLS 
       y.pred[i-t0+1] <- pred
       
     } else { # This part executes when q=0
